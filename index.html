@@ -1,6 +1,6 @@
 <html>
 <head>
-   <script language="javascript" type="text/javascript" src="asd.js"></script>
+<script language="javascript" type="text/javascript" src="asd.js"></script>
 </head>
 
 <body>
@@ -9,26 +9,25 @@
 name:<input type ="text" id="name" name="n">
 <input type="submit" value="next" >
 <button type="button" id="print" onClick="testJS()"> Print </button>
+   
+   
+   
+<textarea id="response" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea>
 </form>
-   
-   
-    
-    <script type="text/javascript" nonce="">
-       
-       function testJS() {
+
+
+
+<script type="text/javascript" nonce="">
+
+function testJS() {
     var b = document.getElementById('name').value,
         url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
-
     document.location.href = url;
 }
-    console.log("test")
-    var response = document.getElementById("response").value;
-    alert(response)
-    console.log(response)
-
-    var data = document.getElementById("data").value;
-    console.log(data)
-    //window.parent.postMessage({"response": response},"*");
+console.log("test")
+document.getElementById("response").innerHTML = data.response
 </script>
 
 </body>
