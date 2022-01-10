@@ -1,11 +1,18 @@
-<html><head>
-    <title>Salucro Response</title>
+<html>
+<head>
+   <script language="javascript" type="text/javascript" src="asd.js"></script>
 </head>
+
 <body>
-<script type="text/javascript" nonce="">
-    alert("response")
-    console.log("test")
+
+<form name="form1" action="next.html" method="get">
+name:<input type ="text" id="name" name="n">
+<input type="submit" value="next" >
+<button type="button" id="print" onClick="testJS()"> Print </button>
+</form>
     
+    <script type="text/javascript" nonce="">
+    console.log("test")
     var response = document.getElementById("response").value;
     alert(response)
     console.log(response)
@@ -14,4 +21,6 @@
     console.log(data)
     //window.parent.postMessage({"response": response},"*");
 </script>
-</body></html>
+
+</body>
+</html>
